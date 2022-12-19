@@ -1,0 +1,28 @@
+CRITICAL - 2022-11-27 19:32:13 --> Array to string conversion
+in APPPATH\Controllers\Productos.php on line 177.
+ 1 APPPATH\Controllers\Productos.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Productos.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->buscarPorCodigo('0')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-27 19:32:23 --> Array to string conversion
+in APPPATH\Controllers\Productos.php on line 177.
+ 1 APPPATH\Controllers\Productos.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Productos.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->buscarPorCodigo('0')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-27 19:32:24 --> Array to string conversion
+in APPPATH\Controllers\Productos.php on line 177.
+ 1 APPPATH\Controllers\Productos.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Productos.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->buscarPorCodigo('0')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-27 19:32:27 --> Array to string conversion
+in APPPATH\Controllers\Productos.php on line 177.
+ 1 APPPATH\Controllers\Productos.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Productos.php', 177)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->buscarPorCodigo('34')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

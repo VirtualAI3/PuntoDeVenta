@@ -1,0 +1,706 @@
+CRITICAL - 2022-11-30 09:18:28 --> Undefined array key "total"
+in APPPATH\Views\inicio.php on line 21.
+ 1 APPPATH\Views\inicio.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'APPPATH\\Views\\inicio.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\Inicio.php(22): view('inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 09:21:47 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\inicio.php on line 21.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('inicio', [], true)
+ 4 APPPATH\Controllers\Inicio.php(22): view('inicio', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Inicio->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 09:51:37 --> Call to undefined function imagecreate()
+in APPPATH\Libraries\barcode.php on line 115.
+ 1 APPPATH\Controllers\Productos.php(222): BARCODE->barcode('1234567890.png', '1234567890', 20, 'horizontal', 'code39', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaBarras()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 09:53:02 --> Call to undefined function imagecreate()
+in APPPATH\Libraries\barcode.php on line 115.
+ 1 APPPATH\Controllers\Productos.php(222): barcode_genera->barcode('1234567890.png', '1234567890', 20, 'horizontal', 'code39', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaBarras()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:30:25 --> Undefined variable $id_venta
+in APPPATH\Views\productos\codigos.php on line 7.
+ 1 APPPATH\Views\productos\codigos.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_venta', 'APPPATH\\Views\\productos\\codigos.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\codigos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/codigos', [], true)
+ 5 APPPATH\Controllers\Productos.php(241): view('productos/codigos')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->muestraCodigos()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:43:07 --> Invalid file: productos/minmos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('productos/minmos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/minmos', [], true)
+ 3 APPPATH\Controllers\Productos.php(266): view('productos/minmos')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->mostrarMinimos()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:46:51 --> Too few arguments to function FPDF::Image(), 0 passed in C:\xampp\htdocs\pos\app\Controllers\Productos.php on line 252 and at least 1 expected
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 868.
+ 1 APPPATH\Controllers\Productos.php(252): FPDF->Image()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 11:50:42 --> Too few arguments to function FPDF::Image(), 0 passed in C:\xampp\htdocs\pos\app\Controllers\Productos.php on line 252 and at least 1 expected
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 868.
+ 1 APPPATH\Controllers\Productos.php(252): FPDF->Image()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaMinimosPdf()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 14:47:38 --> Call to undefined function App\Controllers\now()
+in APPPATH\Controllers\Usuarios.php on line 205.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 14:52:43 --> Undefined array key "nombre_corto"
+in APPPATH\Views\usuarios\editar.php on line 21.
+ 1 APPPATH\Views\usuarios\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_corto"', 'APPPATH\\Views\\usuarios\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(157): view('usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->editar('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:17:00 --> Invalid file: usuarios/acciones.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuarios/acciones.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 3 APPPATH\Controllers\Usuarios.php(148): view('usuarios/acciones')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:18:45 --> Undefined variable $titulo
+in APPPATH\Views\usuarios\acciones.php on line 8.
+ 1 APPPATH\Views\usuarios\acciones.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $titulo', 'APPPATH\\Views\\usuarios\\acciones.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(148): view('usuarios/acciones')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:24:17 --> Cannot access offset of type string on string
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 4 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:25:12 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:27:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:27:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:28:47 --> Cannot access offset of type string on string
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 4 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:28:58 --> Cannot access offset of type string on string
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 4 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:30:38 --> Cannot access offset of type string on string
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 4 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:31:00 --> Cannot access offset of type string on string
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 4 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:32:30 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\usuarios\acciones.php on line 20.
+ 1 APPPATH\Views\usuarios\acciones.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\usuarios\\acciones.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:34:22 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:34:48 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:35:22 --> Attempt to read property "ip" on null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "ip" on null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:36:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:37:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:37:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:37:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 22.
+ 1 APPPATH\Views\usuarios\acciones.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:38:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 24.
+ 1 APPPATH\Views\usuarios\acciones.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:38:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\acciones.php on line 24.
+ 1 APPPATH\Views\usuarios\acciones.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\acciones.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\acciones.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/acciones', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(151): view('usuarios/acciones', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:43:51 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\pos\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get('*')
+ 2 APPPATH\Controllers\Usuarios.php(147): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:46:01 --> Call to undefined method App\Models\LogsModel::getRowArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Usuarios.php(147): CodeIgniter\Model->__call('getRowArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 15:46:26 --> Call to undefined method App\Models\LogsModel::getRowArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Usuarios.php(148): CodeIgniter\Model->__call('getRowArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:52:23 --> Undefined property: App\Controllers\Roles::$detalles_roles
+in APPPATH\Controllers\Roles.php on line 123.
+ 1 APPPATH\Controllers\Roles.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Roles::$detalles_roles', 'APPPATH\\Controllers\\Roles.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->guardaPermisos()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 17:52:42 --> Undefined property: App\Controllers\Roles::$detalles_roles
+in APPPATH\Controllers\Roles.php on line 123.
+ 1 APPPATH\Controllers\Roles.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Roles::$detalles_roles', 'APPPATH\\Controllers\\Roles.php', 123)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->guardaPermisos()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:14:17 --> Undefined array key 2
+in APPPATH\Views\roles\detalles.php on line 17.
+ 1 APPPATH\Views\roles\detalles.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Views\\roles\\detalles.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\roles\\detalles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('roles/detalles', [], true)
+ 5 APPPATH\Controllers\Roles.php(120): view('roles/detalles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->detalles('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 18:31:40 --> mysqli_sql_exception: Unknown column 'permiso.nombre' in 'where clause' in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\pos\app\Models\DetalleRolesPermisosModel.php(29): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\pos\app\Controllers\Roles.php(117): App\Models\DetalleRolesPermisosModel->verficaPermiso('1', 'MenuProductos')
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Roles->detalles('1')
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 18:31:40 --> Unknown column 'permiso.nombre' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `detalle_roles_permisos`
+JOIN `permisos` ON `detalle_roles_permisos`.`id_permiso`=`permisos`.`id`
+WHERE `id_rol` = \'1\'
+AND `permiso`.`nombre` = \'MenuProductos\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_roles_permisos`
+JOIN `permisos` ON `detalle_roles_permisos`.`id_permiso`=`permisos`.`id`
+WHERE `id_rol` = \'1\'
+AND `permiso`.`nombre` = \'MenuProductos\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_roles_permisos`
+JOIN `permisos` ON `detalle_roles_permisos`.`id_permiso`=`permisos`.`id`
+WHERE `id_rol` = \'1\'
+AND `permiso`.`nombre` = \'MenuProductos\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_roles_permisos`
+JOIN `permisos` ON `detalle_roles_permisos`.`id_permiso`=`permisos`.`id`
+WHERE `id_rol` = :id_rol:
+AND `permiso`.`nombre` = :permiso.nombre:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\DetalleRolesPermisosModel.php(29): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Roles.php(117): App\Models\DetalleRolesPermisosModel->verficaPermiso('1', 'MenuProductos')
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->detalles('1')
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:40:46 --> Undefined property: App\Controllers\Productos::$detalleRoles
+in APPPATH\Controllers\Productos.php on line 76.
+ 1 APPPATH\Controllers\Productos.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$detalleRoles', 'APPPATH\\Controllers\\Productos.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:41:40 --> Undefined property: App\Controllers\Productos::$detalleRoles
+in APPPATH\Controllers\Productos.php on line 76.
+ 1 APPPATH\Controllers\Productos.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$detalleRoles', 'APPPATH\\Controllers\\Productos.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:42:18 --> Undefined property: App\Controllers\Productos::$detalleRoles
+in APPPATH\Controllers\Productos.php on line 76.
+ 1 APPPATH\Controllers\Productos.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$detalleRoles', 'APPPATH\\Controllers\\Productos.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:42:48 --> Undefined property: App\Controllers\Productos::$detalleRoles
+in APPPATH\Controllers\Productos.php on line 76.
+ 1 APPPATH\Controllers\Productos.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$detalleRoles', 'APPPATH\\Controllers\\Productos.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:42:55 --> Undefined property: App\Controllers\Productos::$detalleRoles
+in APPPATH\Controllers\Productos.php on line 76.
+ 1 APPPATH\Controllers\Productos.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$detalleRoles', 'APPPATH\\Controllers\\Productos.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 18:43:42 --> Undefined property: App\Controllers\Productos::$detalleRoles
+in APPPATH\Controllers\Productos.php on line 76.
+ 1 APPPATH\Controllers\Productos.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$detalleRoles', 'APPPATH\\Controllers\\Productos.php', 76)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 20:20:56 --> Undefined variable $nombre
+in APPPATH\Views\configuracion\configuracion.php on line 21.
+ 1 APPPATH\Views\configuracion\configuracion.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombre', 'APPPATH\\Views\\configuracion\\configuracion.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\configuracion\\configuracion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('configuracion/configuracion', [], true)
+ 5 APPPATH\Controllers\Configuracion.php(104): view('configuracion/configuracion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Configuracion->actualizar()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 21:20:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1 in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pos\app\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 21:20:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 21:22:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1 in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pos\app\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 21:22:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 21:22:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1 in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pos\app\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 21:22:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 21:22:15 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1 in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pos\app\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 21:22:15 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`, *
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-30 21:23:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* IS NULL' at line 4 in C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*...', 0)
+#1 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*...')
+#2 C:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*...')
+#3 C:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*...', Array, false)
+#4 C:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\pos\app\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\pos\app\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+#8 C:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+#9 C:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-30 21:23:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '* IS NULL' at line 4
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`
+WHERE * IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `logs`.*, `u`.`usuario` AS `nombre`
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`
+WHERE * IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `logs`.*, `u`.`usuario` AS `nombre`
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`
+WHERE * IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `logs`.*, `u`.`usuario` AS `nombre`
+FROM `logs`
+JOIN `usuarios` AS `u` ON `logs`.`id_usuario`=`u`.`id`
+WHERE * IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\LogsModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Usuarios.php(147): App\Models\LogsModel->obtenerNombre()
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 21:24:55 --> Too few arguments to function CodeIgniter\Database\BaseBuilder::where(), 0 passed in C:\xampp\htdocs\pos\system\Model.php on line 772 and at least 1 expected
+in SYSTEMPATH\Database\BaseBuilder.php on line 672.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->where()
+ 2 APPPATH\Models\LogsModel.php(28): CodeIgniter\Model->__call('where', [])
+ 3 APPPATH\Controllers\Usuarios.php(148): App\Models\LogsModel->obtenerNombre()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->acciones()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 21:29:08 --> Undefined array key "nombre_corto"
+in APPPATH\Views\usuarios\editar.php on line 21.
+ 1 APPPATH\Views\usuarios\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_corto"', 'APPPATH\\Views\\usuarios\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(167): view('usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 21:37:12 --> Undefined variable $categoria
+in APPPATH\Views\usuarios\editar.php on line 35.
+ 1 APPPATH\Views\usuarios\editar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'APPPATH\\Views\\usuarios\\editar.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(169): view('usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 21:40:16 --> Undefined array key "id_categoria"
+in APPPATH\Views\usuarios\editar.php on line 35.
+ 1 APPPATH\Views\usuarios\editar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_categoria"', 'APPPATH\\Views\\usuarios\\editar.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(169): view('usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 21:40:26 --> Undefined array key "id_categoria"
+in APPPATH\Views\usuarios\editar.php on line 35.
+ 1 APPPATH\Views\usuarios\editar.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_categoria"', 'APPPATH\\Views\\usuarios\\editar.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(169): view('usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

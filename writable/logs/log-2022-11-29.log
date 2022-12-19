@@ -1,0 +1,62 @@
+CRITICAL - 2022-11-29 08:06:28 --> Undefined property: App\Controllers\Productos::$clientes
+in APPPATH\Controllers\Productos.php on line 185.
+ 1 APPPATH\Controllers\Productos.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$clientes', 'APPPATH\\Controllers\\Productos.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->autocompleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:07:05 --> Undefined property: App\Controllers\Productos::$clientes
+in APPPATH\Controllers\Productos.php on line 185.
+ 1 APPPATH\Controllers\Productos.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$clientes', 'APPPATH\\Controllers\\Productos.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->autocompleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:07:06 --> Undefined property: App\Controllers\Productos::$clientes
+in APPPATH\Controllers\Productos.php on line 185.
+ 1 APPPATH\Controllers\Productos.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Productos::$clientes', 'APPPATH\\Controllers\\Productos.php', 185)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->autocompleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 08:56:41 --> Undefined property: App\Controllers\Ventas::$compras
+in APPPATH\Controllers\Ventas.php on line 51.
+ 1 APPPATH\Controllers\Ventas.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$compras', 'APPPATH\\Controllers\\Ventas.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 09:12:26 --> Undefined property: App\Controllers\Ventas::$compras
+in APPPATH\Controllers\Ventas.php on line 29.
+ 1 APPPATH\Controllers\Ventas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$compras', 'APPPATH\\Controllers\\Ventas.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 09:44:18 --> Undefined property: App\Controllers\Ventas::$detalle_compra
+in APPPATH\Controllers\Ventas.php on line 84.
+ 1 APPPATH\Controllers\Ventas.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$detalle_compra', 'APPPATH\\Controllers\\Ventas.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->generaTicket('8')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 13:10:46 --> Invalid file: ventas/ventas.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/ventas.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ventas/ventas', [], true)
+ 3 APPPATH\Controllers\Ventas.php(33): view('ventas/ventas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 19:47:30 --> Undefined variable $producto
+in APPPATH\Views\productos\productos.php on line 37.
+ 1 APPPATH\Views\productos\productos.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\productos\\productos.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\productos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/productos', [], true)
+ 5 APPPATH\Controllers\Productos.php(77): view('productos/productos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,20 @@
+CRITICAL - 2022-11-21 08:31:44 --> Invalid file: productos/productos.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('productos/productos.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/productos', [], true)
+ 3 APPPATH\Controllers\Productos.php(21): view('productos/productos', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 12:17:30 --> Undefined array key "nombre_corto"
+in APPPATH\Views\productos\editar.php on line 19.
+ 1 APPPATH\Views\productos\editar.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_corto"', 'APPPATH\\Views\\productos\\editar.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/editar', [], true)
+ 5 APPPATH\Controllers\Productos.php(76): view('productos/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->editar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

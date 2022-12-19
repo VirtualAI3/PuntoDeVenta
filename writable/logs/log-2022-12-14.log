@@ -1,0 +1,32 @@
+CRITICAL - 2022-12-14 20:34:31 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\Productos.php on line 314.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->mostrarMinimosExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 20:34:56 --> Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+in APPPATH\Controllers\Productos.php on line 314.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->mostrarMinimosExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 21:19:38 --> fopen(reporte_minimo.xlsx): Failed to open stream: Resource temporarily unavailable
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(reporte_minimo.xlsx): Failed to open stream: Resource temporarily unavailable', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 125)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(125): fopen('FCPATH\\reporte_minimo.xlsx', 'wb')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(542): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\reporte_minimo.xlsx')
+ 4 APPPATH\Controllers\Productos.php(362): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\reporte_minimo.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->mostrarMinimosExcel()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-14 21:30:37 --> fopen(reporte_minimo.xlsx): Failed to open stream: Resource temporarily unavailable
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php on line 125.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(reporte_minimo.xlsx): Failed to open stream: Resource temporarily unavailable', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Writer\\BaseWriter.php', 125)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\BaseWriter.php(125): fopen('FCPATH\\reporte_minimo.xlsx', 'wb')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Writer\Xlsx.php(542): PhpOffice\PhpSpreadsheet\Writer\BaseWriter->openFileHandle('FCPATH\\reporte_minimo.xlsx')
+ 4 APPPATH\Controllers\Productos.php(370): PhpOffice\PhpSpreadsheet\Writer\Xlsx->save('FCPATH\\reporte_minimo.xlsx')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->mostrarMinimosExcel()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

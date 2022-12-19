@@ -1,0 +1,52 @@
+CRITICAL - 2022-12-07 18:02:56 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\roles\detalles.php on line 21.
+ 1 APPPATH\Views\roles\detalles.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\roles\\detalles.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\roles\\detalles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('roles/detalles', [], true)
+ 5 APPPATH\Controllers\Roles.php(130): view('roles/detalles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->detalles('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 18:11:44 --> Undefined variable $permiso
+in APPPATH\Views\roles\detalles.php on line 24.
+ 1 APPPATH\Views\roles\detalles.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $permiso', 'APPPATH\\Views\\roles\\detalles.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\roles\\detalles.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('roles/detalles', [], true)
+ 5 APPPATH\Controllers\Roles.php(130): view('roles/detalles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->detalles('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 18:14:26 --> Cannot access offset of type string on string
+in APPPATH\Views\roles\detalles.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('roles/detalles', [], true)
+ 4 APPPATH\Controllers\Roles.php(130): view('roles/detalles', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->detalles('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 18:16:25 --> Cannot access offset of type string on string
+in APPPATH\Views\roles\detalles.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('roles/detalles', [], true)
+ 4 APPPATH\Controllers\Roles.php(131): view('roles/detalles', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->detalles('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 18:19:16 --> Cannot access offset of type string on string
+in APPPATH\Views\roles\detalles.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('roles/detalles', [], true)
+ 4 APPPATH\Controllers\Roles.php(133): view('roles/detalles', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Roles->detalles('2')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,79 @@
+CRITICAL - 2022-11-28 09:07:49 --> Cannot use object of type mysqli as array
+in APPPATH\Controllers\TemporalCompra.php on line 61.
+ 1 APPPATH\Controllers\TemporalCompra.php(47): App\Controllers\TemporalCompra->cargaProductos('6384cebdef200')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\TemporalCompra->insertar('1', '1', '6384cebdef200')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TemporalCompra))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 13:24:36 --> Undefined variable $id_compra
+in APPPATH\Views\compras\ver_compra_pdf.php on line 7.
+ 1 APPPATH\Views\compras\ver_compra_pdf.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_compra', 'APPPATH\\Views\\compras\\ver_compra_pdf.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\compras\\ver_compra_pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compras/ver_compra_pdf', [], true)
+ 5 APPPATH\Controllers\Compras.php(81): view('compras/ver_compra_pdf')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->muestraCompraPdf('3')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:31:41 --> Undefined property: App\Controllers\Compras::$unidades
+in APPPATH\Controllers\Compras.php on line 29.
+ 1 APPPATH\Controllers\Compras.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Compras::$unidades', 'APPPATH\\Controllers\\Compras.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:33:30 --> Undefined variable $datos
+in APPPATH\Views\compras\compras.php on line 27.
+ 1 APPPATH\Views\compras\compras.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'APPPATH\\Views\\compras\\compras.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\compras\\compras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compras/compras', [], true)
+ 5 APPPATH\Controllers\Compras.php(32): view('compras/compras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 14:34:37 --> Undefined variable $dato
+in APPPATH\Views\compras\compras.php on line 36.
+ 1 APPPATH\Views\compras\compras.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dato', 'APPPATH\\Views\\compras\\compras.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\compras\\compras.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('compras/compras', [], true)
+ 5 APPPATH\Controllers\Compras.php(32): view('compras/compras', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 18:38:33 --> Undefined property: App\Controllers\Ventas::$compras
+in APPPATH\Controllers\Ventas.php on line 29.
+ 1 APPPATH\Controllers\Ventas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$compras', 'APPPATH\\Controllers\\Ventas.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 18:39:15 --> Undefined property: App\Controllers\Ventas::$compras
+in APPPATH\Controllers\Ventas.php on line 29.
+ 1 APPPATH\Controllers\Ventas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$compras', 'APPPATH\\Controllers\\Ventas.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 18:39:17 --> Undefined property: App\Controllers\Ventas::$compras
+in APPPATH\Controllers\Ventas.php on line 29.
+ 1 APPPATH\Controllers\Ventas.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$compras', 'APPPATH\\Controllers\\Ventas.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-28 19:05:13 --> Undefined variable $id_compra
+in APPPATH\Views\ventas\caja.php on line 31.
+ 1 APPPATH\Views\ventas\caja.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_compra', 'APPPATH\\Views\\ventas\\caja.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\ventas\\caja.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ventas/caja', [], true)
+ 5 APPPATH\Controllers\Ventas.php(41): view('ventas/caja')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->venta()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

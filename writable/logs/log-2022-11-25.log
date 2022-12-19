@@ -1,0 +1,65 @@
+CRITICAL - 2022-11-25 13:53:30 --> Call to a member function listErrors() on string
+in APPPATH\Views\login.php on line 48.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Usuarios.php(191): view('login', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 13:58:29 --> Undefined array key "nombre_corto"
+in APPPATH\Views\usuarios\editar.php on line 21.
+ 1 APPPATH\Views\usuarios\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_corto"', 'APPPATH\\Views\\usuarios\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(140): view('usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->editar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 13:58:33 --> Undefined array key "nombre_corto"
+in APPPATH\Views\usuarios\editar.php on line 21.
+ 1 APPPATH\Views\usuarios\editar.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre_corto"', 'APPPATH\\Views\\usuarios\\editar.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\editar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/editar', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(140): view('usuarios/editar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->editar('2')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 14:48:17 --> Undefined variable $datos
+in APPPATH\Views\usuarios\cambia_password.php on line 12.
+ 1 APPPATH\Views\usuarios\cambia_password.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'APPPATH\\Views\\usuarios\\cambia_password.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\cambia_password.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/cambia_password', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(210): view('usuarios/cambia_password', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->cambia_password()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 14:52:43 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\cambia_password.php on line 16.
+ 1 APPPATH\Views\usuarios\cambia_password.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\cambia_password.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\cambia_password.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/cambia_password', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(210): view('usuarios/cambia_password', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->cambia_password()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 14:53:22 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\cambia_password.php on line 16.
+ 1 APPPATH\Views\usuarios\cambia_password.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\cambia_password.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\cambia_password.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/cambia_password', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(210): view('usuarios/cambia_password', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->cambia_password()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

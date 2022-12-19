@@ -1,0 +1,12 @@
+CRITICAL - 2022-12-05 16:16:32 --> substr(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH\Libraries\cfdi_sat\satxmlsv33.php on line 250.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'substr(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Libraries\\cfdi_sat\\satxmlsv33.php', 250)
+ 2 APPPATH\Libraries\cfdi_sat\satxmlsv33.php(250): substr(null, 0, 4)
+ 3 APPPATH\Libraries\cfdi_sat\satxmlsv33.php(82): GeneraXML->satxmlsv33_xml_fech(null)
+ 4 APPPATH\Libraries\cfdi_sat\satxmlsv33.php(39): GeneraXML->satxmlsv33_generales([...], 'ROOTPATH\\public', 'APPPATH\\Libraries\\cfdi_sat', 'ROOTPATH\\public')
+ 5 APPPATH\Libraries\cfdi_sat\satxmlsv33.php(27): GeneraXML->satxmlsv33_genera_xml([...], 'ROOTPATH\\public', 'APPPATH\\Libraries\\cfdi_sat', 'ROOTPATH\\public')
+ 6 APPPATH\Controllers\Factura.php(62): GeneraXML->satxmlsv33([...], 'ROOTPATH\\public', 'APPPATH\\Libraries\\cfdi_sat', 'ROOTPATH\\public')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Factura->facturar('24')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factura))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
