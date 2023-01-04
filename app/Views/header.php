@@ -20,6 +20,13 @@ $user_session = session();
     <link href="<?php echo base_url(); ?>/css/styles.css" rel="stylesheet" />
     <link href="<?php echo base_url(); ?>/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
     
+    <!--Font awesome -->
+    <link rel="stylesheet" href="<?php echo base_url();?>/css/fontawesome.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>/css/brands.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>/css/regular.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>/css/solid.css">
+    
+
     <script src="<?php echo base_url(); ?>/js/all.js"></script>
     <script src="<?php echo base_url(); ?>/js/chart.umd.js"></script>
 </head>

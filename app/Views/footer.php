@@ -3,7 +3,7 @@
         <div class="d-flex align-items-center justify-content-between small">
             <div class="text-muted">Copyright &copy; Diego Apaza <?php echo date('Y'); ?> </div>
             <div>
-                <a href="https://facebook.com/" target="_blank">Facebook</a>
+                <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="font-size: 2rem;"></i></a>
                 &middot;
                 <a href="#">Terms &amp; Conditions</a>
             </div>

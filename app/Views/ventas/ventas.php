@@ -31,7 +31,7 @@
                             <td><?php echo $dato['total']; ?></td>
                             <td><?php echo $dato['cajero']; ?></td>
                             <td>
-                                <a href="<?php echo base_url(); ?>/factura/facturar/<?php echo $dato['id']; ?>" class="btn btn-primary"><i class="fas fa"></i></a>
+                                <a href="<?php echo base_url(); ?>/factura/facturar/<?php echo $dato['id']; ?>" class="btn btn-primary"><i class="fas fa-file"></i></a>
                             </td>
                             <td>
                                 <a href="<?php echo base_url(); ?>/ventas/muestraTicket/<?php echo $dato['id']; ?>" class="btn btn-primary"><i class="fas fa-list-alt"></i></a>

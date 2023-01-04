@@ -29,8 +29,10 @@ class Inicio extends BaseController
         $total = $this->productosModel->totalProductos();
         $totalVentas = $this->ventasModel->totalDia(date('Y-m-d'));
         $minimos=$this->productosModel->productosMinimo();
-        $numVentasDia=$this->ventasModel->numVentas(date('Y-m-d'));
-        $datos = ['total' => $total,'totalVentas'=>$totalVentas,'minimos'=>$minimos,'numVentas'=>$numVentasDia];
+        $week=date('W',strtotime(date('Y-m-d')));
+        
+        $numVentasSemana=$this->ventasModel->numVentas($week);
+        $datos = ['total' => $total,'totalVentas'=>$totalVentas,'minimos'=>$minimos,'numVentas'=>$numVentasSemana];
         echo view('header');
         echo view('inicio', $datos);
         echo view('footer');

@@ -1956,7 +1956,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-.table, .dataTable-table {
+.table, .dataTable-table,.dataTable {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: #212529;
@@ -1969,7 +1969,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #000000;
 }
 .table > :not(caption) > * > *, .dataTable-table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -2033,7 +2033,7 @@ progress {
   --bs-table-hover-bg: #bfd1ec;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bacbe6;
+  border-color: #010101;
 }
 
 .table-secondary {
@@ -2195,7 +2195,7 @@ progress {
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #787a7b;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -11510,7 +11510,7 @@ body {
 }
 
 .sb-sidenav-light {
-  background-color: #f8f9fa;
+  background-color: #72ade8;
   color: #212529;
 }
 .sb-sidenav-light .sb-sidenav-menu .sb-sidenav-menu-heading {

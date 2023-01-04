@@ -160,7 +160,6 @@
                     alert("Debe agregar un producto");
                 } else {
                     $("#form_venta").submit();
-
                 }
             });
         });

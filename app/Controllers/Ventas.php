@@ -59,15 +59,19 @@ class Ventas extends BaseController
     }
     public function guarda()
     {
+        
         $id_venta = $this->request->getPost('id_venta');
         $total = preg_replace('/[\$,]/', '', $this->request->getPost('total'));
         $forma_pago = $this->request->getPost('forma_pago');
         $id_cliente = $this->request->getPost('id_cliente');
- 
 
         $caja=$this->cajas->where('id',$this->session->id_caja)->first();
         $folio=$caja['folio'];
-        $resultadoId = $this->ventas->insertaVenta($folio, $total, $this->session->id_usuario, $this->session->id_caja, $id_cliente, $forma_pago);
+        
+        $day=date('w',strtotime(date('Y-m-d'))); 
+        $week=date('W',strtotime(date('Y-m-d')));
+        $date=$week.$day;
+        $resultadoId = $this->ventas->insertaVenta($folio, $total, $this->session->id_usuario, $this->session->id_caja, $id_cliente, $forma_pago,$date);
         $this->temporal_compra = new TemporalCompraModel();
 
         if ($resultadoId) {
