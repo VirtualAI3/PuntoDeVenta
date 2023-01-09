@@ -123,7 +123,7 @@ class Usuarios extends BaseController
     public function eliminados($activo = 0)
     {
         $usuarios = $this->usuarios->where('activo', $activo)->findAll();
-        $data = ['titulo' => 'Unidades eliminadas', 'datos' => $usuarios];
+        $data = ['titulo' => 'Usuarios eliminadas', 'datos' => $usuarios];
         echo view('header');
         echo view('usuarios/eliminados', $data);
         echo view('footer');

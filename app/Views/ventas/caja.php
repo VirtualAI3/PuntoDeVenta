@@ -69,6 +69,25 @@
             </form>
         </div>
     </main>
+    <!-- Modal -->
+    <div class="modal fade" id="modal-confirma-caja" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Alerta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Debe agregar un producto</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Ok</button>
+                    <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <a class="btn btn-danger btn-ok">Si</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         $(function() {
             $("#cliente").autocomplete({
@@ -153,11 +172,11 @@
                 }
             });
         }
-        $(function(){
-            $("#completa_venta").click(function(){
-                let nFilas=$("#tablaProductos tr").length;
-                if(nFilas<2){
-                    alert("Debe agregar un producto");
+        $(function() {
+            $("#completa_venta").click(function() {
+                let nFilas = $("#tablaProductos tr").length;
+                if (nFilas < 2) {
+                    $('#modal-confirma-caja').modal('show');
                 } else {
                     $("#form_venta").submit();
                 }

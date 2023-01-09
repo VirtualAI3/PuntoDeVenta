@@ -13,7 +13,7 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class Productos extends BaseController
 {
-    protected $productos, $detallesRoles, $session;
+    protected $productos, $detallesRoles, $session,$unidades,$categorias;
     protected $reglas;
     public function __construct()
     {
@@ -113,6 +113,7 @@ class Productos extends BaseController
     }
     public function insertar()
     {
+        $this->LoginRedirect($this->session->id_usuario);
         if ($this->request->getMethod() == "post" && $this->validate($this->reglas)) {
             $this->productos->save([
                 'codigo' => $this->request->getPost('codigo'),
@@ -160,6 +161,7 @@ class Productos extends BaseController
 
     public function editar($id)
     {
+        $this->LoginRedirect($this->session->id_usuario);
         $permiso = $this->detallesRoles->verficaPermiso($this->session->id_rol, 'ProductosEditar');
         if (!$permiso) {
             echo view('alertaUsuario');
@@ -293,6 +295,7 @@ class Productos extends BaseController
         $pdf->SetFont("Arial", 'B', 10);
         $pdf->Image("images/logo-shop.png", 10, 5, 20);
         $pdf->Cell(0, 5, "Reporte de productos con stock minimo", 0, 1, 'C');
+        $pdf->Cell(0,10,"Fecha de reporte: ".date('Y-m-d'),0,0,'L');
         $pdf->Ln(10);
         $pdf->Cell(30, 5, "Codigo", 1, 0, 'C');
         $pdf->Cell(95, 5, "Nombre", 1, 0, 'C');

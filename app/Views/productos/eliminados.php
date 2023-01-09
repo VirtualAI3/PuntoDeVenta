@@ -8,7 +8,7 @@
             <h3 class="mt-4"><?php echo $titulo; ?></h3>
                 <div>
                     <p>
-                        <a href="<?php echo base_url(); ?>/productos" class="btn btn-warning">Productos</a>
+                        <a href="<?php echo base_url(); ?>/productos" class="btn btn-warning text-white align-middle"><i class="fa-solid fa-shop"></i> Productos</a>
                     </p>
                 </div>
                     <table id="datatablesSimple">

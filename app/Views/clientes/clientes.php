@@ -5,8 +5,8 @@
             <h3 class="mt-4"><?php echo $titulo; ?></h3>
             <div>
                 <p>
-                    <a href="<?php echo base_url(); ?>/clientes/nuevo" class="btn btn-info">Agregar</a>
-                    <a href="<?php echo base_url(); ?>/clientes/eliminados" class="btn btn-warning">Eliminados</a>
+                    <a href="<?php echo base_url(); ?>/clientes/nuevo" class="btn btn-info text-white align-middle"> <i class="fa-solid fa-plus"></i> Agregar</a>
+                    <a href="<?php echo base_url(); ?>/clientes/eliminados" class="btn btn-warning text-white align-middle"> <i class="fa-solid fa-trash"></i> Eliminados</a>
                 </p>
             </div>
             <table id="datatablesSimple">

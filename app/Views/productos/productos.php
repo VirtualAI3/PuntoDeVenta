@@ -8,9 +8,9 @@
             <h3 class="mt-4"><?php echo $titulo; ?></h3>
             <div>
                 <p>
-                    <a href="<?php echo base_url(); ?>/productos/nuevo" class="btn btn-info">Agregar</a>
-                    <a href="<?php echo base_url(); ?>/productos/eliminados" class="btn btn-warning">Eliminados</a>
-                    <a href="<?php echo base_url(); ?>/productos/muestraCodigos" class="btn btn-primary">Codigos de Barras</a>
+                    <a href="<?php echo base_url(); ?>/productos/nuevo" class="btn btn-info text-white align-middle"><i class="fa-solid fa-plus"></i> Agregar</a>
+                    <a href="<?php echo base_url(); ?>/productos/eliminados" class="btn btn-warning text-white align-middle"><i class="fa-solid fa-trash"></i> Eliminados</a>
+                    <a href="<?php echo base_url(); ?>/productos/muestraCodigos" class="btn btn-primary align-middle"><i class="fa-solid fa-barcode"></i> Codigos de Barras</a>
                 </p>
             </div>
             <table id="dataTable">
